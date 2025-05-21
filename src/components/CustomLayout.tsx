@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Footer } from "./Footer";
 
 type Props = {
   children: ReactNode;
@@ -7,8 +8,9 @@ type Props = {
 const CustomLayout = ({ children }: Props) => {
   return (
     <div className="h-[100vh]">
-      <div>Esto es porque pasa por el padre</div>
+      <div className="h-50 flex justify-center items-center w-full p-10 bg-amber-700">Esto es porque pasa por el padre</div>
       {children}
+      <Footer/>
     </div>
   );
 };
